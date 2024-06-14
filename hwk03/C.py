@@ -18,7 +18,9 @@ def bfs(start, visited, graph):
             if neighbor not in visited:
                 visited.add(neighbor)
                 q.append(neighbor)
-        connected.append(v)
+                connected.append(neighbor)
+
+    print(connected)
 
     return connected
 

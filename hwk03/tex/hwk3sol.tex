@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+% Adjust the headheight and topmargin
+\setlength{\headheight}{22.54448pt}
+\addtolength{\topmargin}{-10.54448pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%																																																										%
+%										PAGE SETTINGS and PACKAGE LOADING. (You do not need to edit the scripts below.)									%
+%																																																										%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% Margin setting
+			\usepackage[
+				letterpaper,
+				top=1.8cm,
+				bottom=1.5cm,
+				left=1.8cm,
+				right=1.8cm,
+				includefoot,
+				includehead
+			]{geometry}
+
+			% List spacing setup
+			\setlength{\topsep}{0pt}
+			\setlength{\partopsep}{0pt}
+			\setlength{\listparindent}{0em}
+			\setlength{\labelwidth}{\leftmargin}
+			%% set the vertical spacing between paragraphs
+			\setlength{\parskip}{1.5mm}
+
+			% Find the last page
+			\usepackage{lastpage}
+
+			% Fancy headings
+			\usepackage{fancyhdr}
+			\pagestyle{fancyplain}
+
+			\newcommand{\hwnumber}[1]{\def\hwnumberdata{#1}}
+			\def\hwnumberdata{\relax}
+
+			\renewcommand{\author}[1]{\def\authordata{#1}}
+			\def\authordata{\relax}
+			\newcommand{\collaborators}[1]{\def\collaboratorsdata{#1}}
+			\def\collaboratorsdata{\relax}
+
+			\fancyhead[L]{\small CS 330 Homework \#\hwnumberdata \\ %Problem \#\problemnumberdata \\
+				\textsl{Collaborators}: \collaboratorsdata}
+			\fancyhead[R]{\small \authordata \\ }
+			\fancyfoot[C]{\small \thepage\ of \pageref{LastPage}}
+
+			\RequirePackage{titlesec}
+			\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{.5em}{}
+			\renewcommand{\thesubsection}{\alph{subsection})}
+
+			% For including image files
+			\usepackage{graphicx}
+			\usepackage[ruled,vlined,noline]{algorithm2e}
+
+			% For fancy math
+			\RequirePackage{amsmath,amsthm,amssymb}
+			\newtheorem{theorem}{Theorem}
+			\newtheorem{fact}[theorem]{Fact}
+			\newtheorem{lemma}[theorem]{Lemma}
+			\newtheorem{claim}[theorem]{Claim}
+
+			\newcommand{\ord}[2][th]{\ensuremath{{#2}^{\mathrm{#1}}}}
+			% shorthand for \mathcal{O}
+			\newcommand{\Ocal}{\ensuremath{\mathcal{O}}}
+%
+%			PAGE SETTING SCRIPTS END HERE		--->
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% homework number
+\hwnumber{3}
+
+% your name
+\author{Josh Mayer}
+
+% Collaborators. If you didn't collaborate, write "\collaborators{none}".
+% If you did, for each collaborator, write "worked together", "I helped him/her" or "He/she helped me".
+\collaborators{}
+
+
+\begin{document}
+\section{Problem 1}
+
+% If the problem has multiple parts, use \subsection command.
+\subsection{True}
+
+Using the limit method and algebra we
+can see that the limit evaluates to a constant.
+
+
+
+
+\end{document}

@@ -17,6 +17,18 @@ def dfs(grid, visited, i, j):
     return volume
 
 
+# def dfs(grid, visited, x, y):
+#     if (x, y) in visited or grid[x][y] == 0:
+#         return 0
+#     visited.add((x, y))
+#     volume = grid[x][y]
+#     for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+#         movex, movey = x + dx, y + dy
+#         if 0 <= movex < len(grid) and 0 <= movey < len(grid[0]):
+#             volume += dfs(grid, visited, movex, movey)
+#     return volume
+
+
 def max_volume(test_cases):
     results = []
     for grid in test_cases:
